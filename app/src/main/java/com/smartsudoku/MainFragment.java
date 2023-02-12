@@ -82,6 +82,8 @@ public class MainFragment extends Fragment implements MenuProvider, View.OnClick
 
         gridLinearLayout = view.findViewById(R.id.grid);
         createGrid(getResources().getDisplayMetrics().widthPixels);
+        selected = null;
+
         victoryPopup = view.findViewById(R.id.generatorPopup);
         victoryPopup.setOnClickListener(this);
 
