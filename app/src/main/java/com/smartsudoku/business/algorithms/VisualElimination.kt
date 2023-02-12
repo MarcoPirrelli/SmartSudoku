@@ -11,7 +11,7 @@ object VisualElimination : Algorithm {
     override fun where(grid: Grid<EnhancedCell>): Boolean {
         for (i in 0..8)
             for (j in 0..8)
-                if (grid.get(i, j).isMark() and Selector.groupsCored(i, j)
+                if (grid.get(i, j).isMark() && Selector.groupsCored(i, j)
                         .containsNote(grid, grid.get(i, j).getVal())
                 ) {
                     grid.get(i, j).highlighted = true
